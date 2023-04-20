@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/signuptitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="ShareARide"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signuptitle"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawablePadding="20dp"
+        android:hint="Email"
+        android:padding="20dp"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:textSize="15sp"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signuptitle"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/baseline_local_phone_24"
+        android:drawablePadding="20dp"
+        android:hint="Phone"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/password"
+        android:textSize="15sp"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/baseline_info_24"
+        android:drawablePadding="20dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/baseline_info_24"
+        android:drawablePadding="20dp"
+        android:hint="RePassword"
+        android:inputType="textPassword"
+        android:textSize="15sp"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/firstname"
+        android:textSize="15sp"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/repassword"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/baseline_person_outline_24"
+        android:drawablePadding="20dp"
+        android:hint="First Name"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/lastname"
+        android:textSize="15sp"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/repassword"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/baseline_person_outline_24"
+        android:drawablePadding="20dp"
+        android:hint="Last"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/address"
+        android:textSize="15sp"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lastname"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/baseline_house_24"
+        android:drawablePadding="20dp"
+        android:hint="Address"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/dob"
+        android:textSize="15sp"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lastname"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/baseline_date_range_24"
+        android:drawablePadding="20dp"
+        android:hint="DOB"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signupbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:text="REGISTER"
+        android:textSize="25sp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/regloginbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/white"
+        android:text="Or Login instead"
+        android:textSize="15sp"
+        android:textColor="#000000"/>
+
+</RelativeLayout>

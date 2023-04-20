@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:theme="@style/Toolbar" />
+
+    <WebView
+        android:id="@+id/discord_webview"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:visibility="gone" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="185dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#30ffffff"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:hint="Email"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="185dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="215dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#30ffffff"
+            android:drawableLeft="@drawable/baseline_local_phone_24"
+            android:drawablePadding="5dp"
+            android:hint="Phone"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/firstname"
+            android:layout_width="185dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/email"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#30ffffff"
+            android:drawableLeft="@drawable/baseline_person_outline_24"
+            android:gravity="center_vertical"
+            android:drawablePadding="5dp"
+            android:hint="First Name"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/lastname"
+            android:layout_width="185dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/phone"
+            android:layout_marginStart="215dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:background="#30ffffff"
+            android:drawableLeft="@drawable/baseline_person_outline_24"
+            android:drawablePadding="5dp"
+            android:hint="Last"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="185dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/lastname"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#30ffffff"
+            android:drawableLeft="@drawable/baseline_house_24"
+            android:drawablePadding="5dp"
+            android:hint="Address"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/dob"
+            android:layout_width="185dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/lastname"
+            android:layout_marginStart="215dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#30ffffff"
+            android:drawableLeft="@drawable/baseline_date_range_24"
+            android:drawablePadding="5dp"
+            android:hint="DOB"
+            android:padding="5dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="15sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/editbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/white"
+            android:text="edit profile"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom|center_horizontal"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_discord_login"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="0dp"
+                    android:backgroundTint="@color/discord_gray"
+                    android:drawableLeft="@drawable/ic_discord"
+                    android:text="Login with Discord"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/ll_discord_test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/btn_discord_connect"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:text="Connect"
+                        android:layout_gravity="center_horizontal" />
+
+                    <Button
+                        android:id="@+id/btn_discord_disconnect"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:text="Disconnect"
+                        android:layout_gravity="center_horizontal" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_discord_logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:drawableLeft="@drawable/ic_discord"
+                    android:text="Disconnect"
+                    android:backgroundTint="@color/design_default_color_error"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/btn_logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="LOGOUT FROM APP"
+                    android:backgroundTint="@color/design_default_color_error" />
+
+            </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
